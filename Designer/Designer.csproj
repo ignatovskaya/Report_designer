@@ -18,6 +18,11 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
+<PropertyGroup>
+<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+<CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+<StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
+</PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
