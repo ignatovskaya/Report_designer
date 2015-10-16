@@ -20,6 +20,8 @@ artifacts:
 deploy:
   release: Designer-v$(appveyor_build_version)
   provider: GitHub
+  auth_token:
+    secure: 4jp/ql+5OgPXpxhTLqrZhRFXF3jvQ65SGptXrvZ4NIVIoX29OKd5FAZC95PABJW0
   on:
     configuration: Release
     branch: master
