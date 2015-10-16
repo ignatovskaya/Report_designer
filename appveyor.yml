@@ -4,7 +4,7 @@ before_build:
 configuration: Release
 build:
   publish_nuget: true
-  publis_nuget_symbols: true
+  publish_nuget_symbols: true
   include_nuget_references: true
   verbosity: minimal
 
