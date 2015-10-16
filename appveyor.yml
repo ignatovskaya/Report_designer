@@ -1,0 +1,25 @@
+version: 1.0.0.{build}
+before_build:
+- cmd: nuget restore
+configuration: Release
+build:
+  publish_nuget: true
+  publis_nuget_symbols: true
+  include_nuget_references: true
+  verbosity: minimal
+
+after_build:
+- cmd: >-
+    cd packages\Tools.InnoSetup.5.5.6\tools
+    
+    iscc "..\..\..\install.iss"
+
+artifacts: 
+- path: Installator
+
+deploy:
+  release: Designer-v$(appveyor_build_version)
+  provider: GitHub
+  on:
+    configuration: Release
+    branch: master
