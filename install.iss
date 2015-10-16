@@ -54,7 +54,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Files]
 
 ; EXECUTABLE FILE
-Source: "Designer\bin\Debug\Designer.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "Designer\bin\Release\Designer.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Source: "D:\Soft\dotNET\NDP453-KB2969351-x86-x64-AllOS-ENU.exe"; DestDir: "{tmp}"; Check: not IsRequiredDotNetDetected
 
